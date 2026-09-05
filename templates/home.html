@@ -1,6 +1,10 @@
-<h1>Home</h1>
+{% extends "base.html" %}
 
-<h2>My Goals</h2>
+{% block content %}
+
+<h2>Home</h2>
+
+<h3>My Goals</h3>
 
 <ul>
     {% for goal in goals %}
@@ -15,3 +19,5 @@
         </li>
     {% endfor %}
 </ul>
+
+{% endblock content %}
